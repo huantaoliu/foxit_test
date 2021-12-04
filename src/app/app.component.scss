@@ -1,0 +1,14 @@
+:host {
+  a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    > svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

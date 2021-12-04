@@ -1,0 +1,43 @@
+::ng-deep {
+  .fv__text-boundary,
+  .fv__pdf-annot-line-point {
+    pointer-events: none;
+    cursor: default;
+  }
+  .fv__ui-layer {
+    z-index: -999;
+    display: none;
+  }
+  .fv__ui-sidebar,
+  .fv__ui-toolbar .fv__ui-tab-nav,
+  .fv__ui-grouplist-item[name="home-tab-group-change-color"],
+  .fv__ui-grouplist-item[name="home-tab-group-io"],
+  .fv__ui-grouplist-item[name="home-tab-group-page"],
+  .fv__ui-grouplist-item[name="home-tab-group-hand"],
+  .fv__ui-grouplist-item[name="file-property"] {
+    display: none !important;
+  }
+  .fv__ui-paddle.fv__ui-directive-portfolio {
+    text-align: center;
+  }
+  .fv__ui-grouplist-item[name="home-tab-group-zoom"] {
+    &::after {
+      display: none;
+    }
+  }
+  .mat-drawer-content {
+    overflow-x: hidden;
+  }
+  .fv__pdf-page-annot-container.pdf-page-markup-annot-container,
+  .fv__annot-container-zindex-up .fv__pdf-page-annot-container {
+    opacity: 0.35;
+    &.fv__pdf-page-highlight-annot-container {
+      opacity: 1;
+    }
+  }
+}
+
+/* Hide Selection Tooltip */
+:host ::ng-deep .fv--ui-text-selection-tooltip {
+  display: none !important;
+}
